@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "source": "nodemon source-api/index.js",
-    "service": "nodemon micro-service/index.js",
-    "pem": "node source-api/convertPem.js"
+    "service": "nodemon micro-service/index.js"
   },
   "keywords": [],
   "author": "",
