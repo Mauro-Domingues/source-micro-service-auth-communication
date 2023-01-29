@@ -1,0 +1,24 @@
+{
+  "name": "ms-comunication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "source": "nodemon source-api/index.js",
+    "service": "nodemon micro-service/index.js",
+    "pem": "node source-api/convertPem.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-jwt": "^8.4.0",
+    "jsonwebtoken": "^9.0.0",
+    "jwks-rsa": "^3.0.1",
+    "nodemon": "^2.0.20",
+    "pem-jwk": "^2.0.0",
+    "rsa-pem-to-jwk": "^1.1.3"
+  }
+}
