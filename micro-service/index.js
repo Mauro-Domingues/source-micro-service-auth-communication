@@ -7,11 +7,11 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(expressJwk.expressjwt({
-  secret: jwksClient(jwksClient.expressJwtSecret({
+  secret: jwksClient.expressJwtSecret({
     jwksUri: 'http://localhost:3333/.well-known/jwks.json',
     cache: true,
     rateLimit: true
-  })),
+  }),
   algorithms: ['RS256']
 }).unless({ path: ['/'] })
 )
